@@ -16,17 +16,11 @@
         .step-card {
             break-inside: avoid;
         }
-        .image-placeholder {
-            background-color: #e5e7eb;
-            background-image: repeating-linear-gradient(45deg, #f3f4f6 25%, transparent 25%, transparent 75%, #f3f4f6 75%, #f3f4f6), repeating-linear-gradient(45deg, #f3f4f6 25%, #e5e7eb 25%, #e5e7eb 75%, #f3f4f6 75%, #f3f4f6);
-            background-position: 0 0, 10px 10px;
-            background-size: 20px 20px;
-        }
+        /* De image-placeholder class is verwijderd omdat we nu echte afbeeldingen gebruiken */
     </style>
 </head>
 <body class="p-4 md:p-8">
 
-    <!-- Download Knop -->
     <div class="max-w-5xl mx-auto mb-4 text-right" data-html2canvas-ignore>
         <button onclick="downloadAlsJPG()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition-colors inline-flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
@@ -36,7 +30,6 @@
 
     <div id="handleiding-container" class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
         
-        <!-- Header -->
         <header class="bg-green-700 text-white p-8 text-center">
             <h1 class="text-4xl md:text-5xl font-extrabold mb-4">⛺ Hoe zet je een patrouilletent op?</h1>
             <p class="text-xl opacity-90">Een stapsgewijze handleiding voor jou en je patrouille.</p>
@@ -47,7 +40,6 @@
 
         <div class="p-8">
             
-            <!-- Wat heb je nodig? -->
             <section class="mb-12 bg-green-50 p-6 rounded-xl border-2 border-green-200">
                 <h2 class="text-2xl font-bold text-green-800 mb-6 border-b-2 border-green-200 pb-2">🎒 Wat heb je allemaal nodig?</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
@@ -74,18 +66,16 @@
                 </div>
             </section>
 
-            <!-- Stappenplan -->
             <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Het Stappenplan 🚀</h2>
             
             <div class="space-y-12">
 
-                <!-- Stap 1 & 2 -->
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative">
                         <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">1</div>
                         <h3 class="text-xl font-bold mb-4 ml-6 text-green-700">De perfecte locatie</h3>
-                        <div class="image-placeholder w-full h-48 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow"></span>
+                        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (1).png" alt="Stap 1 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-gray-700">
                             <li>Zoek een plaats uit met een <strong>vlakke ondergrond</strong>.</li>
@@ -96,8 +86,8 @@
                     <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative">
                         <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">2</div>
                         <h3 class="text-xl font-bold mb-4 ml-6 text-green-700">De zeilen klaarleggen</h3>
-                        <div class="image-placeholder w-full h-48 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center"></span>
+                        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (2).png" alt="Stap 2 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-gray-700">
                             <li>Leg eerst het <strong>buitententzeil</strong> open op het grondzeil.</li>
@@ -109,7 +99,6 @@
                     </div>
                 </div>
 
-                <!-- Stap 3 -->
                 <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative">
                     <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">3</div>
                     <h3 class="text-xl font-bold mb-4 ml-6 text-green-700">Het geraamte in elkaar steken</h3>
@@ -122,19 +111,18 @@
                                 <li class="flex gap-3"><span class="font-bold text-green-600">4.</span> Zorg dat de pinnen van de 3 staande palen in de gaten van deze dwarspaal steken.</li>
                             </ul>
                         </div>
-                        <div class="image-placeholder w-full h-full min-h-[200px] rounded-lg flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center max-w-[80%]"></span>
+                        <div class="w-full h-full min-h-[200px] rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (3).png" alt="Stap 3 afbeelding" class="w-full h-full object-cover">
                         </div>
                     </div>
                 </div>
 
-                <!-- Stap 4 & 5 -->
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative">
                         <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">4</div>
                         <h3 class="text-xl font-bold mb-4 ml-6 text-green-700">Buitententzeil toevoegen</h3>
-                        <div class="image-placeholder w-full h-48 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center"></span>
+                        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (4).png" alt="Stap 4 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-gray-700">
                             <li>Plooi nu ook het buitententzeil toe over het geraamte.</li>
@@ -145,8 +133,8 @@
                     <div class="step-card bg-green-50 border-2 border-green-500 p-6 rounded-xl shadow-md relative">
                         <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">5</div>
                         <h3 class="text-xl font-bold mb-4 ml-6 text-green-800">Rechtzetten maar! 💪</h3>
-                        <div class="image-placeholder w-full h-48 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center"></span>
+                        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden shadow-sm border border-green-200">
+                            <img src="Adobe Express - file (5).png" alt="Stap 5 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-gray-800">
                             <li>Zet de tent met <strong>3 personen</strong> (één per paal) recht. Let op dat de pinnen door het zeil blijven!</li>
@@ -158,20 +146,18 @@
                     </div>
                 </div>
 
-                <!-- Stap 6 (Cruciaal) -->
                 <div class="step-card bg-red-50 border-2 border-red-200 p-6 rounded-xl shadow-md text-center">
                     <h3 class="text-2xl font-bold mb-2 text-red-600">🛑 Stap 6: Deuren dicht!</h3>
                     <p class="text-gray-800 font-semibold text-lg">Doe ALLE tentdeuren dicht (ritsen sluiten).</p>
                     <p class="text-gray-600 mt-2">Als je dit nu niet doet, is de kans groot dat je de deuren na het opspannen niet meer dicht krijgt omdat de tent te strak staat!</p>
                 </div>
 
-                <!-- Stap 7 & 8 -->
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative">
                         <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">7</div>
                         <h3 class="text-xl font-bold mb-4 ml-6 text-green-700">Binnententzeil opspannen</h3>
-                        <div class="image-placeholder w-full h-48 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center"></span>
+                        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (7).png" alt="Stap 7 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
                             <li>Maak met spankoorden eerst de <strong>hoeken</strong> vast. De hoek tussen koord en haring = 90°.</li>
@@ -183,8 +169,8 @@
                     <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative">
                         <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">8</div>
                         <h3 class="text-xl font-bold mb-4 ml-6 text-green-700">Buitententzeil opspannen</h3>
-                        <div class="image-placeholder w-full h-48 rounded-lg mb-4 flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center"></span>
+                        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (8).png" alt="Stap 8 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <ul class="list-disc pl-5 space-y-2 text-gray-700 text-sm">
                             <li>Maak de koorden op dezelfde manier vast als bij de binnentent.</li>
@@ -196,13 +182,12 @@
                     </div>
                 </div>
 
-                <!-- Stap 9 -->
                 <div class="step-card bg-white border-2 border-gray-100 p-6 rounded-xl shadow-md relative w-full md:w-2/3 mx-auto">
                     <div class="absolute -top-5 -left-5 bg-green-600 text-white w-12 h-12 flex items-center justify-center rounded-full text-2xl font-bold shadow-lg">9</div>
                     <h3 class="text-xl font-bold mb-4 ml-6 text-green-700 text-center">Stormkoorden bevestigen</h3>
                     <div class="flex flex-col md:flex-row gap-6 items-center">
-                        <div class="image-placeholder w-full md:w-1/2 h-32 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-400">
-                            <span class="bg-white px-3 py-1 text-sm font-semibold text-gray-600 rounded shadow text-center"></span>
+                        <div class="w-full md:w-1/2 h-32 rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                            <img src="Adobe Express - file (9).png" alt="Stap 9 afbeelding" class="w-full h-full object-cover">
                         </div>
                         <p class="text-gray-700 md:w-1/2">
                             Neem de stormkoorden (uit het zakje toebehoren). Bevestig deze aan de pinnen van de <strong>voorste</strong> en de <strong>achterste</strong> paal. Maak ze stevig vast met een tentharing in de grond.
@@ -214,7 +199,6 @@
 
         </div>
 
-        <!-- Footer -->
         <footer class="bg-gray-800 text-white text-center py-6 mt-8">
             <p class="text-xl font-bold">🌲 Veel succes met het bouwen en alvast een geweldig kamp gewenst! 🏕️</p>
         </footer>
